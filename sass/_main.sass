@@ -194,22 +194,34 @@ header
 
 
 .intro
-  padding-bottom: 60px
+  padding: 40px 0 50px
+  background: url(../img/intro_bg.png)
+  +cover
   .row
     margin-top: 50px
   &__img
     text-align: center
-    width: 300px
-    height: 364px
+    width: 235px
+    height: 339px
+    margin-left: -30px
     img
       max-width: 100%
   &__text
     font-size: 16px
-    color: #6f6f6f
-    font-family: 'robotolight'
+    color: #7b7b7b
+    font-family: 'robotoregular'
     p
-      margin-top: 25px
-
+      margin-top: 20px
+      &:first-child
+        margin-top: 0
+  &__img--second
+    @extend .intro__img
+    width: 371px
+    height: 371px
+    margin-left: 20px
+    img
+      +border-radius(50%)
+      max-width: 100%
 
 
 .about

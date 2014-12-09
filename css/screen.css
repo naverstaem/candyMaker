@@ -1748,12 +1748,15 @@ header .header__counter .now span, .header--bottom .header__counter .now span { 
 header .header__form input, .header--bottom .header__form input { height: 34px; width: 100%; margin-bottom: 10px; font-size: 16px; padding-left: 15px; border: 2px solid #fff; -moz-border-radius: 19px; -webkit-border-radius: 19px; border-radius: 19px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background: #fff; }
 header .header__form button, .header--bottom .header__form button { margin-top: 20px; }
 
-.intro { padding-bottom: 60px; }
+.intro { padding: 40px 0 50px; background: url(../img/intro_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .intro .row { margin-top: 50px; }
-.intro__img { text-align: center; width: 300px; height: 364px; }
-.intro__img img { max-width: 100%; }
-.intro__text { font-size: 16px; color: #6f6f6f; font-family: "robotolight"; }
-.intro__text p { margin-top: 25px; }
+.intro__img, .intro__img--second { text-align: center; width: 235px; height: 339px; margin-left: -30px; }
+.intro__img img, .intro__img--second img { max-width: 100%; }
+.intro__text { font-size: 16px; color: #7b7b7b; font-family: "robotoregular"; }
+.intro__text p { margin-top: 20px; }
+.intro__text p:first-child { margin-top: 0; }
+.intro__img--second { width: 371px; height: 371px; margin-left: 20px; }
+.intro__img--second img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; max-width: 100%; }
 
 .about { background: url(../img/about_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding-top: 40px; }
 .about h2 { font-family: "robotobold_condensed"; font-size: 36px; color: #597b99; display: inline-block; position: relative; text-transform: uppercase; }
@@ -1886,7 +1889,7 @@ footer .footer__bottom span { margin-left: 10px; }
   .work__items { background: none; } }
 @media (max-width: 768px) { .about__img { max-width: 100%; } }
 @media (max-width: 480px) { .title { font-size: 36px !important; }
-  .how__img, .why__img, .intro__img { max-width: 100%; }
+  .how__img, .why__img, .intro__img, .intro__img--second { max-width: 100%; }
   .header--bottom .header__img { max-width: 100%; }
   .header--bottom .header__img img { max-width: 100%; }
   .header--bottom .header__price .price--old--bottom { left: -30px; } }
