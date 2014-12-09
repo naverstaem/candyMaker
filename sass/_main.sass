@@ -272,162 +272,52 @@ header
       max-width: 100%
 
 .advantages
-  border-top: 5px solid #ffffff
-  padding-top: 30px
-  padding-bottom: 50px
-  background: url(../img/advantages_bg.png)
-  +cover
-  position: relative
-  overflow: hidden
-  .row
-    &:first-of-type
-      position: relative
-      margin-top: 125px
-    &:nth-of-type(2)
-      margin-top: 0
-      position: relative
-      top: -170px
-  &__img
-    width: 284px
-    height: 284px
-  .item
-    font-family: 'robotocondensed'
-    font-size: 18px
-    color: #927961
-    display: inline-block
-    text-transform: uppercase
-    span
-      border-bottom: solid 2px
-    &.i1, &.i3, &.i5
-      text-align: right
-      border-bottom: solid 2px
-    i
-      position: relative
-      display: inline-block
-      left: -6px
-      top: 0
+  padding: 40px 0
+  background: url(../img/advantages_bg.jpg) no-repeat 53% 140px
+
+  h2
+    color: #e24878
+    &:after
+      border-color: #e24878
+  &__item
+    color: #ffffff
+    font-size: 15px
+    text-align: center
+    font-family: 'robotoregular'
+    +border-radius(20px)
+    margin-top: 46px
+    display: table
+
     &.i1
-      padding-left: 10px
-      &:before
-        position: absolute
-        top: 59px
-        right: -138px
-        width: 160px
-        height: 0
-        border-bottom: solid 2px
-        +transform(rotate(24deg))
-        content: ''
-        z-index: 1
-      &:after
-        position: absolute
-        content: ''
-        z-index: 1
-        right: -137px
-        top: 88px
-        width: 10px
-        height: 10px
-        +border-radius(50%)
-        background: #937961
-
-      i
-        +s(a-img1)
+      background: url(../img/a-img1.png) no-repeat
+      width: 261px
+      height: 80px
     &.i2
-      &:before
-        position: absolute
-        top: 61px
-        left: -133px
-        width: 180px
-        height: 0
-        border-bottom: solid 2px
-        +transform(rotate(-19deg))
-        content: ''
-        z-index: 1
-      &:after
-        position: absolute
-        content: ''
-        z-index: 1
-        left: -137px
-        top: 88px
-        width: 10px
-        height: 10px
-        +border-radius(50%)
-        background: #937961
-      i
-        +s(a-img3)
+      background: url(../img/a-img2.png) no-repeat
+      width: 256px
+      height: 80px
+      margin-left: -20px
     &.i3
-      &:before
-        position: absolute
-        top: 57px
-        right: -138px
-        width: 160px
-        height: 0
-        border-bottom: solid 2px
-        +transform(rotate(24deg))
-        content: ''
-        z-index: 1
-      &:after
-        position: absolute
-        content: ''
-        z-index: 1
-        right: -137px
-        top: 86px
-        width: 10px
-        height: 10px
-        +border-radius(50%)
-        background: #937961
-      i
-        +s(a-img2)
+      background: url(../img/a-img3.png) no-repeat
+      width: 261px
+      height: 80px
     &.i4
-      &:before
-        position: absolute
-        top: 55px
-        left: -137px
-        width: 180px
-        height: 0
-        border-bottom: solid 2px
-        +transform(rotate(-19deg))
-        content: ''
-        z-index: 1
-      &:after
-        position: absolute
-        content: ''
-        z-index: 1
-        left: -137px
-        top: 81px
-        width: 10px
-        height: 10px
-        +border-radius(50%)
-        background: #937961
-      i
-        +s(a-img4)
+      background: url(../img/a-img4.png) no-repeat
+      width: 261px
+      height: 80px
     &.i5
-      position: relative
-      left: 50%
-      +transform(translateX(-50%))
-      margin-top: 20px
-      &:before
-        position: absolute
-        top: -35px
-        left: 65px
-        width: 65px
-        height: 0
-        border-bottom: solid 2px
-        +transform(rotate(90deg))
-        content: ''
-        z-index: 1
-      &:after
-        position: absolute
-        content: ''
-        z-index: 1
-        left: 92px
-        top: -71px
-        width: 10px
-        height: 10px
-        +border-radius(50%)
-        background: #937961
-      i
-        +s(a-img5)
-
+      background: url(../img/a-img5.png) no-repeat
+      width: 256px
+      height: 80px
+      margin-right: -20px
+    &.i6
+      background: url(../img/a-img6.png) no-repeat
+      width: 261px
+      height: 80px
+    p
+      display: table-cell
+      vertical-align: middle
+      line-height: 1em
 
 .how
   padding: 35px
