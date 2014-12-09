@@ -79,18 +79,18 @@ label.error
 body
   font-size: 18px
   line-height: 1.4
-  background: url(../img/body_bg.png) repeat
-  color: #444
-  font-family: 'proxima_nova_rgregular'
+  background: #ffffff
+  color: #3c3c3c
+  font-family: 'robotoregular'
   //+pfl
 .out
   position: relative
   //overflow: hidden
 input, textarea
   +placeholder
-    font-size: 16px
+    font-size: 14px
     text-transform: none
-    color: #000
+    color: #888888
     font-family: 'robotolight_italic'
 %in
   max-width: 1200px
@@ -108,22 +108,27 @@ input, textarea
   //+s(close)
 
 .btn
-  display: inline-block
-  font-size: 16px
+  display: block
+  width: 100%
+  font-size: 14px
   text-decoration: none
   text-transform: uppercase
   +transition(background, .5s)
-  +background-clip(padding-box)
   color: #ffffff
-  +border-radius(10px)
-  background-color: #fd49a7
-  +box-shadow(0 2px 5px rgba(29,30,31,.26), inset 0 -3px 0 rgba(29,30,31,.17))
-  +background-image(linear-gradient(to bottom, #fb59c7 0%, #d1328f 100%))
-  font-family: 'robotobold_condensed'
-
+  font-family: 'robotocondensed'
+  border: 2px solid #730933
+  +border-radius(19px)
+  +background-clip(padding-box)
+  background: #730933
+  span
+    display: inline-block
+    position: relative
+    top: 0
+    left: 36px
+    +s(button-ico)
 
   &:hover
-    background: lighten(#d1328f, 10%)
+    background: lighten(#730933, 10%)
     +box-shadow(0 0 0 0)
     color: #fff
 .title
@@ -158,16 +163,16 @@ input, textarea
   padding: 0
   .counter-title
     color: inherit
-    font-size: 18px
+    font-size: 27px
     display: inline-block
-    font-family: 'robotolight'
+    font-family: 'rumpelstiltskinregular'
     margin: 0
     position: relative
-    top: 12px
+    text-transform: uppercase
   .bl
     float: left
     text-align: center
-    margin: 0 12px
+    margin: 0 4px
     &:last-of-type
       margin-right: 0
     &:first-of-type
@@ -175,32 +180,32 @@ input, textarea
     span
       display: inline-block
       font-family: 'robotobold_condensed'
-      font-size: 36px
-      color: #597b99
-      padding-top: 2px
-      //width: 55px
-      //height: 39px
+      font-size: 20px
+      color: #881342
+      padding-top: 5px
+      width: 39px
+      height: 39px
       position: relative
-      //+border-radius(3px)
-      //+background-clip(padding-box)
-      //+box-shadow(0 2px 0 #000)
-      background: none
-      &:after
-        position: absolute
-        content: ":"
-        font-size: 33px
-        top: 3px
-        right: -16px
-      &.s
-        &:after
-          content: ""
+      +border-radius(50%)
+      +background-clip(padding-box)
+      +box-shadow(0 2px 0 rgba(112,18,0,.4))
+      +background(linear-gradient(to bottom, #fff 0%, #e6e8ea 100%))
+      //&:after
+      //  position: absolute
+      //  content: ":"
+      //  font-size: 33px
+      //  top: 3px
+      //  right: -16px
+      //&.s
+      //  &:after
+      //    content: ""
 
 
     p
-      font-family: 'robotolight'
+      font-family: 'robotoregular'
       font-size: 12px
       color: inherit
-      margin-top: 6px
+      margin-top: 2px
 
 
 
