@@ -462,10 +462,53 @@ header
 
 .review
   padding: 40px 0 50px
+  background: url(../img/review_bg.png)
+  +cover
   h2
     margin-bottom: 50px
+  &__item
+    margin-top: 35px
+    position: relative
+
+  &__img
+    display: inline-block
+    width: 57px
+    height: 57px
+    margin-right: 15px
+    vertical-align: middle
+    img
+      +border-radius(50%)
+  &__head
+    text-align: center
+    display: inline-block
+    vertical-align: middle
+
+  &__name
+    font-family: 'robotobold_condensed'
+    color: #e24878
+    height: 50px
+    font-size: 24px
+    position: relative
 
 
+  &__text
+    font-family: 'robotoregular'
+    font-size: 16px
+    color: #7b7b7b
+    margin-top: 10px
+    padding-right: 20px
+    z-index: 1
+
+  .carousel-control
+    background-image: none
+    width: 50px
+    height: auto
+    &.left
+      +s(prev)
+      top: 25%
+    &.right
+      +s(next)
+      top: 25%
 
 
 
