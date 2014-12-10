@@ -514,22 +514,29 @@ header
 
 
 .header--bottom
-  padding-top: 55px
+  padding: 0
   @extend header
   background: url(../img/header--bottom_bg.jpg)
   +cover
   position: relative
+  .header__title--bottom
+    font-size: 40px
+    line-height: .9
+    margin: 40px 0
 
+  .header__img--bottom
+    top: -30px
+    left: -200px
+    margin-bottom: -30px
+    img
+      max-width: none
 
 .also
   padding-top: 40px
   padding-bottom: 85px
   h2
-    color: #f1660f
-    font-family: 'robotobold_condensed'
-    font-size: 30px
-    text-transform: uppercase
-    text-align: center
+    &:after
+      border-bottom: none
   .item
     border: 2px solid rgba(29,30,31,.13)
     +border-radius(32px)
