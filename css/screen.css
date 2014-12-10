@@ -1708,7 +1708,7 @@ input::placeholder, textarea::placeholder { font-size: 14px; text-transform: non
 
 .navbar { margin-bottom: 0; }
 
-.navbar-brand { text-transform: uppercase; color: #fff !important; font-family: "turbotabook"; }
+.navbar-brand { text-transform: uppercase; color: #753268 !important; font-family: "robotomedium"; }
 
 .navbar-default { border: none; background: none; padding: 10px 0; text-align: center; }
 .navbar-default .icon-bar { background-color: #3f3f3f !important; }
