@@ -715,44 +715,21 @@ footer
 
 
 //media queries
-
+@media (max-width: $screen-lg-min)
+  .intro__img
+    margin-left: 0
+    max-width: 100%
 @media (max-width: $screen-md-min)
-  header
-    .header__img
-      top: 0
-  .about__img
-    margin-left: auto
-  .advantages
-    .row
-      &:nth-of-type(2)
-        position: static
-    .col-md-3
-      text-align: center
-    .item
-      &.i1, &.i2, &.i3, &.i4, &.i5
-        &:before
-          border-bottom: 0
-        &:after
-          background: none
-        float: none !important
-        margin: 10px 0
-  .work__items
-    background: none
+  .advantages__item
+    float: none !important
+    margin: 30px auto 0 !important
+  .about__video
+    margin-top: -200px
+
 //
 @media (max-width: $screen-sm-min)
-  .about__img
-    max-width: 100%
+
 @media (max-width: $screen-xs-min)
   .title
     font-size: 36px !important
-  .how__img, .why__img, .intro__img
-    max-width: 100%
 
-  .header--bottom
-    .header__img
-      max-width: 100%
-      img
-        max-width: 100%
-    .header__price
-      .price--old--bottom
-        left: -30px

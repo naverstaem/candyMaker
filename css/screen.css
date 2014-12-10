@@ -1864,17 +1864,7 @@ footer .footer__bottom span { margin-left: 10px; }
 .thanks .modal-body { padding: 25px 0; }
 .thanks .modal-body h3 { font-size: 20px; color: #343837; font-family: "robotoregular"; }
 
-@media (max-width: 992px) { header .header__img, .header--bottom .header__img { top: 0; }
-  .about__img { margin-left: auto; }
-  .advantages .row:nth-of-type(2) { position: static; }
-  .advantages .col-md-3 { text-align: center; }
-  .advantages .item.i1, .advantages .item.i2, .advantages .item.i3, .advantages .item.i4, .advantages .item.i5 { float: none !important; margin: 10px 0; }
-  .advantages .item.i1:before, .advantages .item.i2:before, .advantages .item.i3:before, .advantages .item.i4:before, .advantages .item.i5:before { border-bottom: 0; }
-  .advantages .item.i1:after, .advantages .item.i2:after, .advantages .item.i3:after, .advantages .item.i4:after, .advantages .item.i5:after { background: none; }
-  .work__items { background: none; } }
-@media (max-width: 768px) { .about__img { max-width: 100%; } }
-@media (max-width: 480px) { .title { font-size: 36px !important; }
-  .how__img, .why__img, .intro__img, .intro__img--second { max-width: 100%; }
-  .header--bottom .header__img { max-width: 100%; }
-  .header--bottom .header__img img { max-width: 100%; }
-  .header--bottom .header__price .price--old--bottom { left: -30px; } }
+@media (max-width: 1200px) { .intro__img, .intro__img--second { margin-left: 0; max-width: 100%; } }
+@media (max-width: 992px) { .advantages__item { float: none !important; margin: 30px auto 0 !important; }
+  .about__video { margin-top: -200px; } }
+@media (max-width: 480px) { .title { font-size: 36px !important; } }
