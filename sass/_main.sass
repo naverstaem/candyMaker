@@ -238,7 +238,6 @@ header
     font-size: 15px
     text-align: center
     font-family: 'robotoregular'
-    +border-radius(20px)
     margin-top: 46px
     display: table
 
@@ -413,115 +412,6 @@ header
 
 
 
-.how
-  padding: 35px
-  h2
-    margin-bottom: 70px
-  &__img
-    width: 300px
-    height: 300px
-    img
-      max-width: 100%
-  &__text
-    font-family: 'robotolight'
-    font-size: 16px
-    color: #6f6f6f
-  &__attention
-    margin: 20px 0
-  &__attention_title
-    display: inline-block
-    position: relative
-    font-family: 'robotobold_condensed'
-    font-size: 30px
-    color: #f1660f
-    text-transform: uppercase
-    line-height: 1em
-    i
-      +s(bang-ico)
-      position: relative
-      display: inline-block
-      left: -10px
-      top: 0
-  &__attention_title--dark
-    color: #597b99
-    i
-      +s(popup-ico)
-  &__attention_text
-    color: #f1660f
-    font-family: 'robotolight_italic'
-    font-size: 16px
-    display: inline-block
-    margin-left: -30px
-  &__attention_text--dark
-    color: #597b99
-
-
-.why
-  padding-top: 20px
-  padding-bottom: 50px
-  .row
-    &:last-child
-      margin-top: 30px
-  h2
-    font-size: 36px
-    margin-bottom: 70px
-  &__list
-    font-family: 'robotolight'
-    font-size: 16px
-    color: #6f6f6f
-    list-style: none
-    li
-      position: relative
-      padding-left: 40px
-      margin-top: 15px
-      &:before
-        position: absolute
-        content: ''
-        +s(list-ico2)
-        top: 4px
-        left: 0
-  &__img
-    width: 300px
-    height: 300px
-    img
-      max-width: 100%
-  &__text
-    @extend .how__text
-    &:first-of-type
-      margin-top: 40px
-      position: relative
-      &:before
-        position: absolute
-        content: ''
-        width: 252px
-        height: 0
-        max-width: 100%
-        border-bottom: solid 1px #acacac
-        top: -30px
-        left: 50%
-        +transform(translateX(-50%))
-
-  &__list--bottom
-    padding-left: 0
-    li
-      padding-left: 30px
-      &:before
-        background: #597b99
-        width: 6px
-        height: 6px
-        top: 8px
-        +border-radius(50%)
-  &__list_title
-    padding-left: 30px
-    position: relative
-    font-family: 'robotobold_condensed'
-    font-size: 30px
-    color: #597b99
-    text-transform: uppercase
-    line-height: 1em
-
-
-
 
 
 
@@ -529,23 +419,41 @@ header
   padding: 30px 0 60px
   background: url(../img/work_bg.png)
   +cover
+  div[class^="col-md-"]
+    &:last-child
+      .work__img
+        &:after
+          background: none
+  h2
+    color: #ffffff
+    &:after
+      border-color: #ffffff
   &__items
-    background: url(../img/work-curve-img.png) no-repeat 95px 15px
     margin-top: 30px
   &__item
     text-align: center
     margin-top: 35px
   &__img
-    width: 140px
-    height: 140px
+    width: 112px
+    height: 112px
     margin-bottom: 15px
+    +border-radius(50%)
+    border: solid 3px #ffffff
+    line-height: 106px
+    position: relative
+    &:after
+      position: absolute
+      content: ''
+      top: 33%
+      right: -75px
+      +s(w-next-ico)
+
+
     img
-      +border-radius(50%)
-      max-width: 100%
   p
     font-family: 'robotocondensed'
-    font-size: 18px
-    color: #927961
+    font-size: 16px
+    color: #ffffff
     text-transform: uppercase
     padding: 0 20px
     line-height: 1em
@@ -555,7 +463,6 @@ header
 .review
   padding: 40px 0 50px
   h2
-    color: #f1660f
     margin-bottom: 50px
 
 
